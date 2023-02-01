@@ -1,37 +1,37 @@
 type CourseGrade = {
-    name: string;
-    weight:	number;
-    grade: number;
+  name: string;
+  weight: number;
+  grade: number;
 };
 
 type CourseGrades = {
-    assignmentWeights: CourseGrade;
-    finalExamWeight: number;
+  assignmentWeights: CourseGrade;
+  finalExamWeight: number;
 };
 
 type Student = {
-    name: string;
-    weights: CourseGrades;
-    currentAverage: number;
-}
+  name: string;
+  weights: CourseGrades;
+  currentAverage: number;
+};
 
 type NewStudentsRequest = {
-    name: string;
-    weights: CourseGrades;
+  name: string;
+  weights: CourseGrades;
 };
 
 type AssignmentGarde = {
-    grade: number;
+  grade: number;
 };
 
 type FinalGrade = {
-    overallScore: number;
-    letterGrade: string;
+  overallScore: number;
+  letterGrade: string;
 };
 
-type finalExamScores = {
-    neededForA:	number;
-    neededForB:	number;
-    neededForC:	number;
-    neededForD:	number;
+type FinalExamScores = {
+  neededForA: number;
+  neededForB: number;
+  neededForC: number;
+  neededForD: number;
 };
