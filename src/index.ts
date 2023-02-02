@@ -1,5 +1,6 @@
 import express, { Express } from 'express';
 import { notImplemented } from './controllers/NotImplementedController';
+import StudentController from './controllers/StudentController';
 
 const app: Express = express();
 const PORT = 8019;
@@ -10,7 +11,7 @@ const PORT = 8019;
 
 // app.listen(PORT, handlelistenevent);
 
-app.get('/api/students', notImplemented);
+app.get('/api/students', StudentController.getAllStudents);
 app.post('/api/students', notImplemented);
 // GET http://localhost:8019/api/customer/Keito //(WildCard)
 app.get('/api/students/:studentName', notImplemented);

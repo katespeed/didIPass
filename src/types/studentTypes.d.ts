@@ -4,8 +4,10 @@ type CourseGrade = {
   grade: number;
 };
 
+// type CourseGradeArray = Array<CourseGrade>;
+
 type CourseGrades = {
-  assignmentWeights: CourseGrade;
+  assignmentWeights: Array<CourseGrade>;
   finalExamWeight: number;
 };
 
@@ -15,7 +17,7 @@ type Student = {
   currentAverage: number;
 };
 
-type NewStudentsRequest = {
+type NewStudentRequest = {
   name: string;
   weights: CourseGrades;
 };
@@ -35,3 +37,5 @@ type FinalExamScores = {
   neededForC: number;
   neededForD: number;
 };
+
+type StudentManager = Record<string, Student>;
