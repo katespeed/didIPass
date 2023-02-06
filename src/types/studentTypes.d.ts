@@ -8,7 +8,7 @@ type CourseGrade = {
 
 type CourseGrades = {
   assignmentWeights: Array<CourseGrade>;
-  finalExamWeight: number;
+  finalExamWeight: object;
 };
 
 type Student = {
@@ -39,3 +39,7 @@ type FinalExamScores = {
 };
 
 type StudentManager = Record<string, Student>;
+
+type StudentNameParams = {
+  studentName: string;
+};
